@@ -37,16 +37,9 @@
 
     <!-- 3.1 Presentation Slider -->
     <section class="presentation-slider" id="inicio">
-        <div class="slide active" style="background-image: url('/api/placeholder/1200/600')">
+        <div class="slide active">
             <div class="slide-content">
-                <h1>Bem-vindo à nossa Clínica</h1>
-                <p>Cuidando da sua saúde com excelência</p>
-            </div>
-        </div>
-        <div class="slide" style="background-image: url('/api/placeholder/1200/600')">
-            <div class="slide-content">
-                <h1>Atendimento Especializado</h1>
-                <p>Equipe médica altamente qualificada</p>
+                <img src="img/logomarca.png" alt="" width="50%">
             </div>
         </div>
     </section>
@@ -62,7 +55,9 @@
                     </div>
                 </div>
                 <div class="grid-about">
-                    <div class="about-image"></div>
+                    <div class="about-image">
+                        <img src="img/doutora.png" alt="" width="70%">
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,21 +75,31 @@
     <!-- 3.4 Main Treatments -->
     <section class="section treatments" id="tratamentos">
         <div class="grid-container">
-            <h1>Principais Tratamentos</h1>
+            <h1>Principais Procedimentos</h1>
+            <p style="text-align: center">Conheça os procedimentos estéticos voltados para a saúde e bem-estar do seu corpo.
+                <br>Técnicas e procedimentos personalizados para as mais diferentes necessidades, com base nas características de cada paciente.</p>
             <div class="grid-3">
                 <div class="grid-treatments">
-                    <p>Ninfoplastia</p>
+                    <img src="img/icon-corpo.png" alt="">
+                    <h1>Ninfoplastia</h1>
                     <p>A ninfoplastia, também conhecida como labioplastia, é um procedimento cirúrgico que visa alterar o tamanho e a forma dos lábios vaginais. Os benefícios desse procedimento incluem:
                         Melhora da autoestima: Para muitas mulheres, a insatisfação com a aparência dos lábios vaginais pode afetar sua autoconfiança e intimidade. A ninfoplastia pode ajudar a restaurar a confiança e a autoestima.</p>
                 </div>
                 <div class="grid-treatments">
-                    <p>Rejuvenescimento íntimo</p>
+                    <img src="img/icon-corpo.png" alt="">
+                    <h1>Rejuvenescimento íntimo</h1>
                     <p>O rejuvenescimento íntimo a laser é uma abordagem não invasiva para melhorar a saúde e a aparência da área genital feminina. Este procedimento envolve o uso de lasers de alta precisão para estimular o colágeno na pele e tecidos circundantes, promovendo assim a regeneração celular e melhorando a qualidade da pele.</p>
                 </div>
                 <div class="grid-treatments">
-                    <p>Clareamento íntimo</p>
+                    <img src="img/icon-corpo.png" alt="">
+                    <h1>Clareamento íntimo</h1>
                     <p>O clareamento íntimo é um procedimento cosmético que busca uniformizar o tom da pele em áreas íntimas, como a região genital, ânus e virilha, que podem ter pigmentação mais escura em comparação com outras partes do corpo.</p>
                 </div>
+            </div>
+            <div class="treatments-btn-content">
+                <a href="https://wa.me/5569999946231" target="_blank" class="treatments-btn">
+                    NOSSOS PROCEDIMENTOS
+                </a>
             </div>
         </div>
     </section>
@@ -111,10 +116,12 @@
             <div class="grid-2">
                 <div class="grid-structure">
                     <h1>Uma estrutura moderna e confortável para te atender</h1>
-                    <p>A Clínica Intimavie conta com um local sofisticado que une ciência, tecnologia em aparelhos de alto padrão e um ambientes pensado única e exclusivamente no seu bem estar e conforto.</p> 
+                    <p>A Clínica Intimavie conta com um local sofisticado que une ciência, tecnologia em aparelhos de alto padrão e um ambientes pensado única e exclusivamente no seu bem estar e conforto.</p>
                     <p>Para melhor atendê-los contamos com aparelhos de alta tecnologia que estão sempre a sua disposição para os tratamentos e atendimento de segunda a sábado.</p>
                 </div>
-                <div class="grid-structure"></div>
+                <div class="grid-structure">
+                    <img src="img/foto_02.jpg" alt="" width="80%">
+                </div>
             </div>
             </div>
         </div>
@@ -133,10 +140,10 @@
         <div class="grid-container">
             <div class="grid-2">
                 <div class="grid-item">
-                    <div class="message-text">                
+                    <div class="message-text">
                         <p>Entre em contato conosco e agende uma consulta.</p>
                     </div>
-                </div>                
+                </div>
                 <div class="grid-item">
                     <div class="message-button">
                         <a href="https://wa.me/5569999946231" target="_blank" class="message-whatsapp-btn">
@@ -155,19 +162,29 @@
             <h1>Clinica Intimavie na mídia</h1>
             <div>companhe as novidades sobre a nossa clínica na imprensa e nas redes sociais e fique por dentro das novidades,
                 dicas de como cuidar da sua pele, informações sobre os tratamentos e muito mais!</div>
-            <!-- <div class="social-icons">
-                <a href="#"><img src="/api/placeholder/50/50" alt="Facebook"></a>
-                <a href="#"><img src="/api/placeholder/50/50" alt="Instagram"></a>
-                <a href="#"><img src="/api/placeholder/50/50" alt="LinkedIn"></a>
-            </div> -->
         </div>
     </section>
 
     <!-- 3.9 Google Reviews -->
     <section class="section google">
-        <div class="container">
+        <div class="grid-container">
             <h1>Alguns depoimentos dos <b>nossos clientes</b></h1>
             
+            <div class="grid-3">
+                <div class="grid-item">
+                    <p>Raiane Oliveira</p>
+                    <p>Foi maravilhoso, doutora super atenciosa, com uma equipe muito competente,.. Ainda ganhei um brinde pra lá de especial… um laser capilar que eu tô amando muito
+                        Simplesmente se consultem com ela gente, é muito bom, super recomendo</p>
+                </div>
+                <div class="grid-item">
+                    <p>Benedita souza</p>
+                    <p>Ótima experiência, um atendimento que me deixou super avontade, ela conversa e te explica tudo muito detalhado. Parabéns Doutora Christiane, continue fazendo seu trabalho com amor.</p>
+                </div>
+                <div class="grid-item">
+                    <p>Zelinda Carvalho</p>
+                    <p>Gratidão a Deus pela sua vida, por ter todo esse cuidado e carinho com seus paciente, atenciosa, dedicada, uma excelente PROFISSIONAL, SUPER INDICO, obrigada por tanto cuidado.😍🙏</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -260,37 +277,5 @@
             <p>Copyright 2025 Clínica Intimavie - Todos os direitos reservados | Desenvolvido por Theomar Rego</p>
         </div>
     </footer>
-
-    <script>
-        // Slider functionality
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            slides[index].classList.add('active');
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        setInterval(nextSlide, 5000);
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
-
 </html>

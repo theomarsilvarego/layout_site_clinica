@@ -61,16 +61,19 @@ h1 {
 /* 2 Column Grid */
 .grid-2 {
     grid-template-columns: repeat(2, 1fr);
+    align-items: start !important;
 }
 
 /* 3 Column Grid */
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start !important;
 }
 
 /* 4 Column Grid */
 .grid-4 {
     grid-template-columns: repeat(4, 1fr);
+    align-items: start !important;
 }
 
 /* Responsive Breakpoints */
@@ -81,7 +84,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .grid-3, 
+    .grid-3,
     .grid-4 {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -157,9 +160,7 @@ h1 {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease;
-    background-size: cover;
-    background-position: center;
+    background: var(--secondary);
 }
 
 .slide.active {
@@ -173,7 +174,6 @@ h1 {
     transform: translate(-50%, -50%);
     text-align: center;
     color: var(--light);
-    background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 10px;
     width: 80%;
@@ -209,7 +209,7 @@ h1 {
 .message-text {
     font-size: 2rem;
     margin: 0;
-    margin-bottom: 0.5rem;    
+    margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
@@ -233,7 +233,7 @@ h1 {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    border: none;
+    border: 1px solid transparent;
     font-weight: 500;
     transition: background-color 0.3s ease;
     white-space: nowrap;
@@ -242,6 +242,7 @@ h1 {
 .message-whatsapp-btn:hover {
     background-color: #ffffff;
     color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .message-whatsapp-btn i {
@@ -249,6 +250,10 @@ h1 {
 }
 
 /* Treatments Grid */
+.treatments {
+    background: var(--secondary);
+}
+
 .treatments-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -258,6 +263,38 @@ h1 {
 .treatments h1 {
     text-align: center;
     text-transform: uppercase;
+}
+
+.grid-treatments {
+    text-align: center;
+    place-items: center;
+
+}
+
+.treatments-btn-content {
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.treatments-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.treatments-btn:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 /* Technologies Section */
@@ -530,7 +567,7 @@ h1 {
     .contact-text {
         text-align: center;
     }
-    
+
     .button-column {
         justify-content: center;
     }
