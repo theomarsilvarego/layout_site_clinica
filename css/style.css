@@ -573,6 +573,7 @@ h1 {
     }
 }
 
+/* Blog */
 .blog h1 {
     text-align: center;
     text-transform: uppercase;
@@ -647,10 +648,13 @@ h1 {
     border-radius: 4px;
     font-size: 0.9rem;
     transition: background 0.3s ease;
+    border: 1px solid transparent;
 }
 
 .read-more:hover {
-    background: #7A6C33;
+    background: var(--secondary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 @media (max-width: 992px) {
